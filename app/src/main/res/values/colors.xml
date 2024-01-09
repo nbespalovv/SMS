@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <array name="rainbow">
+        <item>#FB0CD0</item>
+        <item>#FF0000</item>
+        <item>#FF5500</item>
+        <item>#EFEF00</item>
+        <item>#00FF00</item>
+        <item>#A0FFCB</item>
+        <item>#00FFFF</item>
+        <item>#0000FF</item>
+        <item>#FB0CFF</item>
+    </array>
+</resources>

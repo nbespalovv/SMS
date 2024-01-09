@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_nav_graph"
+    app:startDestination="@id/smsListFragment">
+
+    <fragment
+        android:id="@+id/smsListFragment"
+        android:name="com.example.sms_nba.smsreader.presenter.sms_list.SmsListFragment"
+        android:label="SmsListFragment" >
+        <action
+            android:id="@+id/action_smsListFragment_to_smsContentFragment"
+            app:destination="@id/smsContentFragment" >
+            <argument
+                android:name="addressId"
+                app:argType="string"/>
+        </action>
+    </fragment>
+    <fragment
+        android:id="@+id/smsContentFragment"
+        android:name="com.example.sms_nba.smsreader.presenter.sms_content.SmsContentFragment"
+        android:label="SmsContentFragment">
+        <argument
+            android:name="addressId"
+            app:argType="string" />
+    </fragment>
+</navigation>
